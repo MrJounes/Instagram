@@ -28,6 +28,9 @@
 		63783DB1255D0D7D00C8A7EE /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63783DB0255D0D7D00C8A7EE /* PostEditorViewController.swift */; };
 		63783DB3255D0D9600C8A7EE /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63783DB2255D0D9600C8A7EE /* PublishPostViewController.swift */; };
 		63783DB5255D179800C8A7EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63783DB4255D179800C8A7EE /* GoogleService-Info.plist */; };
+		63FAB08D255D2258004D6DE3 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAB08C255D2258004D6DE3 /* DatabaseManager.swift */; };
+		63FAB08F255D239F004D6DE3 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAB08E255D239F004D6DE3 /* AuthManager.swift */; };
+		63FAB091255D2426004D6DE3 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FAB090255D2426004D6DE3 /* StorageManager.swift */; };
 		F5D9B54F03510C2544D3562B /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B80A7A8E9A4F824E0B1FC53D /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		63783DB0255D0D7D00C8A7EE /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		63783DB2255D0D9600C8A7EE /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 		63783DB4255D179800C8A7EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63FAB08C255D2258004D6DE3 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		63FAB08E255D239F004D6DE3 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		63FAB090255D2426004D6DE3 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		676DA00ADA63B08FECD9E47F /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		A4B0C60DCB965773B8DDD422 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		B80A7A8E9A4F824E0B1FC53D /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +156,9 @@
 				63783D7C255D0A0700C8A7EE /* AppDelegate.swift */,
 				63783D7E255D0A0700C8A7EE /* SceneDelegate.swift */,
 				63783DB4255D179800C8A7EE /* GoogleService-Info.plist */,
+				63FAB08C255D2258004D6DE3 /* DatabaseManager.swift */,
+				63FAB08E255D239F004D6DE3 /* AuthManager.swift */,
+				63FAB090255D2426004D6DE3 /* StorageManager.swift */,
 			);
 			path = Resourses;
 			sourceTree = "<group>";
@@ -179,14 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				63783D9F255D0C8A00C8A7EE /* Onboarding */,
-				63783DA4255D0D0F00C8A7EE /* PostViewController.swift */,
-				63783DA6255D0D2200C8A7EE /* EditProfileViewController.swift */,
-				63783DA8255D0D3200C8A7EE /* SettingsViewController.swift */,
-				63783DAA255D0D3E00C8A7EE /* ListViewController.swift */,
-				63783DAC255D0D4E00C8A7EE /* SearchViewController.swift */,
-				63783DAE255D0D5F00C8A7EE /* SearchResultViewController.swift */,
-				63783DB0255D0D7D00C8A7EE /* PostEditorViewController.swift */,
-				63783DB2255D0D9600C8A7EE /* PublishPostViewController.swift */,
+				63FAB08A255D20C7004D6DE3 /* General */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -198,6 +200,21 @@
 				63783DA2255D0CBF00C8A7EE /* RegistrationViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		63FAB08A255D20C7004D6DE3 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				63783DA4255D0D0F00C8A7EE /* PostViewController.swift */,
+				63783DA6255D0D2200C8A7EE /* EditProfileViewController.swift */,
+				63783DA8255D0D3200C8A7EE /* SettingsViewController.swift */,
+				63783DAA255D0D3E00C8A7EE /* ListViewController.swift */,
+				63783DAC255D0D4E00C8A7EE /* SearchViewController.swift */,
+				63783DAE255D0D5F00C8A7EE /* SearchResultViewController.swift */,
+				63783DB0255D0D7D00C8A7EE /* PostEditorViewController.swift */,
+				63783DB2255D0D9600C8A7EE /* PublishPostViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,12 +340,15 @@
 				63783D81255D0A0700C8A7EE /* HomeViewController.swift in Sources */,
 				63783DA3255D0CBF00C8A7EE /* RegistrationViewController.swift in Sources */,
 				63783DB1255D0D7D00C8A7EE /* PostEditorViewController.swift in Sources */,
+				63FAB091255D2426004D6DE3 /* StorageManager.swift in Sources */,
 				63783DA5255D0D0F00C8A7EE /* PostViewController.swift in Sources */,
+				63FAB08D255D2258004D6DE3 /* DatabaseManager.swift in Sources */,
 				63783D9A255D0BF800C8A7EE /* NotificationsViewController.swift in Sources */,
 				63783DAF255D0D5F00C8A7EE /* SearchResultViewController.swift in Sources */,
 				63783DA1255D0CB200C8A7EE /* LoginViewController.swift in Sources */,
 				63783DAD255D0D4E00C8A7EE /* SearchViewController.swift in Sources */,
 				63783D9C255D0C1200C8A7EE /* ProfileViewController.swift in Sources */,
+				63FAB08F255D239F004D6DE3 /* AuthManager.swift in Sources */,
 				63783D7D255D0A0700C8A7EE /* AppDelegate.swift in Sources */,
 				63783D7F255D0A0700C8A7EE /* SceneDelegate.swift in Sources */,
 				63783DAB255D0D3E00C8A7EE /* ListViewController.swift in Sources */,
